@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    public float sensitivity;
     public float speed;
 
-    Vector3 rotation;
     Vector3 movement;
 
     Rigidbody playerRB;
@@ -15,12 +13,6 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
-    }
-    void Update()
-    {
-        //camera
-        rotation.y += Input.GetAxis("Mouse X") * sensitivity;
-        transform.eulerAngles = rotation;
     }
 
     void FixedUpdate()
