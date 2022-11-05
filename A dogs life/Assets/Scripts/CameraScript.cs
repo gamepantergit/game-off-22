@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
+    [Header("Camera look")]
     public float sensitivity;
-
-    Vector3 rotation;
+    public Vector3 rotation;
 
     void Start()
     {

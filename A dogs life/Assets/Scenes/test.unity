@@ -426,7 +426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16b8fc49317015644b5d7fb1e48753a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  cameraFollow: {fileID: 1420698024}
+  speed: 100
 --- !u!1 &1045207154
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensitivity: 7
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &1717507496
 GameObject:
   m_ObjectHideFlags: 0

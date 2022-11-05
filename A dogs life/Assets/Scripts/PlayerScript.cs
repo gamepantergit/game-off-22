@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    [Header("Movement")]
+    public GameObject cameraFollow;
     public float speed;
-
     Vector3 movement;
-
+    Vector3 rotation;
     Rigidbody playerRB;
 
     void Start()
     {
         playerRB = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        //apply rotation
+        if (Input.GetButton("Walk"))
+        {
+            rotation.y = cameraFollow.GetComponent<CameraScript>().rotation.y;
+            transform.eulerAngles = rotation;
+        }
     }
 
     void FixedUpdate()
